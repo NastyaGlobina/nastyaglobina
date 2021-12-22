@@ -1,0 +1,155 @@
+.resume {
+    color: black;
+    font-family: "Zen Antique", serif;
+    font-size: 22px;
+  }
+  .resume header {
+    position: relative;
+    padding: 20px 0;
+    background-color: #647A8E;
+    text-align: center;
+    font-family: "Zen Antique", serif;
+  }
+  .resume header > .row > * {
+    width: 100%;
+  }
+  .resume header h1 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: white;
+  }
+  .resume header h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: white;
+  }
+  .resume header .wrap-lines {
+    margin: 150px 0 0;
+  }
+  .resume header .wrap-lines .line1,
+  .resume header .wrap-lines .line2 {
+    position: relative;
+  }
+  .resume header .wrap-lines .line1::before, .resume header .wrap-lines .line1::after,
+  .resume header .wrap-lines .line2::before,
+  .resume header .wrap-lines .line2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 1px;
+    background-color: white;
+  }
+  .resume header .wrap-lines .line1::after,
+  .resume header .wrap-lines .line2::after {
+    left: auto;
+    right: 0;
+  }
+  .resume header .wrap-lines .line2 {
+    margin-top: 30px;
+  }
+  .resume header .wrap-lines .line2::before, .resume header .wrap-lines .line2::after {
+    height: 2px;
+    width: 30%;
+  }
+  .resume header .img-shift {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 100;
+    background-color: #8093a5;
+    width: 300px;
+    height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .resume header .img-shift img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .resume main .row {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .resume main .col-6 {
+    padding: 100px 10px 80px 80px;
+  }
+  .resume main .col-6:first-child {
+    background-color: #F0EDEE;
+  }
+  .resume main .col-6:last-child {
+    background-color: #f5f3f3;
+  }
+  .resume main h5 {
+    margin: 60px 0 40px 0;
+    color: #8093a5;
+    font-size: 23px;
+    font-weight: 600;
+    text-align: start;
+    text-decoration: underline;
+  }
+  .resume main svg {
+    margin-right: 8px;
+  }
+  .resume main .contact p {
+    display: flex;
+    align-items: center;
+  }
+  .resume main ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .resume main .row1 {
+    margin-top: 30px;
+  }
+  .resume main .svg-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .resume main .wrap-img {
+    width: 100%;
+  }
+  .resume main .wrap-img img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+  .resume main .wrap-img .wrap-hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.5s linear 0s;
+    -o-transition: all 0.5s linear 0s;
+    transition: all 0.5s linear 0s;
+  }
+  .resume main .wrap-img button {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 50px;
+    background: #8093a5;
+    padding: 5 px 10 px;
+    border-radius: 3 px;
+    opacity: 1;
+    -webkit-transition: all 0.5s linear 0s;
+    -o-transition: all 0.5s linear 0s;
+    transition: all 0.5s linear 0s;
+  }
+  .resume main .wrap-img:hover .wrap-hover {
+    opacity: 1;
+  }

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Nastya Globina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="resume">
+        <header class="container">
+            <div class="row">
+                <h1 v-html="$t('msg.contacts.h')"></h1>
+                <h2 v-html="$t('msg.contacts.h1')"></h2>
+                <div class="wrap-lines">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                </div>
+                <div class="img-shift">
+                    <img class="round" src="/public/фото1.png" alt="" />
+                </div>
+            </div>
+        </header>
+
+        <main class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h5 v-html="$t('msg.contacts.h2')"></h5>
+
+                    <div class="contact">
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#647A8E"
+                                class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                            </svg>globina999@gmail.com
+                        </p>
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#647A8E"
+                                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                            </svg>+380936006101
+                        </p>
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#647A8E"
+                                class="bi bi-geo-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z" />
+                            </svg>{{ $t('msg.contacts.contact') }}
+                        </p>
+                    </div>
+
+                    <h5 v-html="$t('msg.contacts.h4')"></h5>
+                    <div class="contact">
+                        <p v-html="$t('msg.contacts.contact1')"></p>
+                        <p v-html="$t('msg.contacts.contact2')"></p>
+                        <p v-html="$t('msg.contacts.contact3')"></p>
+                    </div>
+                    <h5 v-html="$t('msg.contacts.h3')"></h5>
+                    <p v-html="$t('msg.contacts.proj')"></p>
+                    <ul>
+                        <li>Palmira Company</li>
+                        <li>Palmira Aqua</li>
+                        <li>Link:</li>
+                        <a href="https://palmira-aqua.company">https://palmira-aqua.company</a>
+                    </ul>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="wrap-img">
+                                <img src="/public/картинка-мал.png" alt="" />
+                                <div class="wrap-hover">
+                                    <button @click="showModal">
+                                        Подробнее
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <h5 v-html="$t('msg.contacts.h5')"></h5>
+                    <ul>
+                        <li v-html="$t('msg.contacts.lang1')"></li>
+                        <li v-html="$t('msg.contacts.lang2')"></li>
+                        <li v-html="$t('msg.contacts.lang3')"></li>
+                    </ul>
+                    <h5 v-html="$t('msg.contacts.h7')"></h5>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Vue.js</li>
+                        <li>Linux</li>
+                        <li>Bootstrap</li>
+                        <li>Git</li>
+                    </ul>
+
+                    <h5 v-html="$t('msg.contacts.h6')"></h5>
+                    <ul>
+                        <li v-html="$t('msg.contacts.prof1')"></li>
+                        <li v-html="$t('msg.contacts.prof2')"></li>
+                        <li v-html="$t('msg.contacts.prof3')"></li>
+                    </ul>
+                    <h5 v-html="$t('msg.contacts.h8')"></h5>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <p v-html="$t('msg.contacts.skills1')"></p>
+                            <div class="svg-bar">
+                                <svg-bar value="95" :options="options"></svg-bar>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <p v-html="$t('msg.contacts.skills2')"></p>
+                            <div class="svg-bar">
+                                <svg-bar value="80" :options="options"></svg-bar>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <p v-html="$t('msg.contacts.skills3')"></p>
+                            <div class="svg-bar">
+                                <svg-bar value="75" :options="options"></svg-bar>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row row1">
+                        <div class="col-4">
+                            <p v-html="$t('msg.contacts.skills4')"></p>
+                            <div class="svg-bar">
+                                <svg-bar value="80" :options="options"></svg-bar>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <p v-html="$t('msg.contacts.skills5')"></p>
+                            <div class="svg-bar">
+                                <svg-bar value="60" :options="options"></svg-bar>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <p v-html="$t('msg.contacts.skills6')"></p>
+                            <div class="svg-bar">
+                                <svg-bar value="70" :options="options"></svg-bar>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
